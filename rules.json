@@ -7,7 +7,7 @@
       "redirect": { "extensionPath": "/blocked.html" }
     },
     "condition": {
-      "urlFilter": "||9gag.com",
+      "urlFilter": "||website.com",
       "resourceTypes": ["main_frame"]
     }
   }
