@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "9gag Blocker",
+  "version": "1.0",
+  "description": "Blocks 9gag.com",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.9gag.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "action": {}
+}
