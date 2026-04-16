@@ -1,22 +1,27 @@
 # Website Blocker Extension for Chrome
- 
+
 A minimal Chrome extension that blocks a website of your choice.
- 
+
 ## Install
- 
+
 1. Clone or download this repo
-2. Open `rules.json` and replace `9gag.com` with your target domain
+2. Edit `rules.json` and `manifest.json` to set your target domain (see below)
 3. Go to `chrome://extensions`
 4. Enable **Developer mode**
 5. Click **Load unpacked**, select this folder
+
 ## Changing the blocked site
- 
-In `rules.json`, edit this line:
- 
+
+In `rules.json`, update the `urlFilter` and `host_permissions` values:
+
+```json
+"urlFilter": "||reddit.com"
 ```
-"urlFilter": "||9gag.com"
+
+In `manifest.json`, update the `host_permissions` value:
+
+```json
+"host_permissions": ["*://*.reddit.com/*"]
 ```
- 
-Replace `9gag.com` with whatever domain you want to block, e.g. `||reddit.com` or `||twitter.com`.
- 
-The `||` prefix matches the domain and all subdomains.
+
+Both need to match. The `||` prefix matches the domain and all subdomains, so `||reddit.com` blocks `reddit.com`, `www.reddit.com`, `old.reddit.com`, etc.
