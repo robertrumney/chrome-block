@@ -2,9 +2,9 @@
   "manifest_version": 3,
   "name": "9gag Blocker",
   "version": "1.0",
-  "description": "Blocks 9gag.com",
+  "description": "Blocks a website of your choice",
   "permissions": ["declarativeNetRequest"],
-  "host_permissions": ["*://*.9gag.com/*"],
+  "host_permissions": ["*://*.website.com/*"],
   "declarative_net_request": {
     "rule_resources": [{
       "id": "ruleset",
