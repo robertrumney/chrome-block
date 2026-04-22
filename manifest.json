@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "9gag Blocker",
+  "name": "Website Blocker",
   "version": "1.0",
   "description": "Blocks a website of your choice",
   "permissions": ["declarativeNetRequest"],
